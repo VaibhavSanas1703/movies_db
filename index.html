@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Top Popular Movies</title>
+     <link href="https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800" rel="stylesheet" />
+     <link href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <div class="voice-container">
+          <div class="input">
+              <textarea name="" id="text-voice" placeholder="Click to Speak button!" disabled></textarea>
+          </div>
+          <div class="mic">
+               <button id="mic" onclick="voiceCapture()">Speak</button>
+          </div>
+          <div class="enable-search">
+               <input type="checkbox" id="check">
+               <label for="check">Enable Search</label>
+          </div>
+          <div>
+               <p id="text"></p>
+          </div>
+     </div>
+
+   <div class="movies-container">
+          
+   </div>
+
+     <script src="app.js"></script>
+</body>
+</html>

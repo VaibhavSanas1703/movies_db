@@ -1,0 +1,21 @@
+
+Top Popular Movies 
+https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=991b3bbe638c4e2083f71c4d4a5dacf2&page=1
+
+Search Movies By Name
+https://api.themoviedb.org/3/search/movie?&api_key=04c35731a5ee918f014970082a0088b1&query=
+
+imagepath
+https://image.tmdb.org/t/p/w1280
+
+
+<div class="card">
+               <div class="poster">
+                    <div class="layer"></div>
+                    <img src="" alt="">
+               </div>
+               <div class="movie-content">
+                    <h1>Squid Game</h1>
+                    <h2>7.0 ⭐</h2>
+               </div>
+          </div>
