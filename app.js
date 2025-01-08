@@ -22,6 +22,7 @@ checkInput.addEventListener("change",(e) => {
           labelText.innerHTML = "Enable Search"
           speakBtn.disabled = false;
           textArea.value = ""
+          document.querySelector("#text").innerHTML = ""
           renderMovies(APIURL)
      }
 })
