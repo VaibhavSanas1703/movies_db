@@ -50,7 +50,7 @@ const renderMovies = async (URL) => {
           movieContainer.innerHTML += `
           <div class="card">
                <div class="poster">
-                    <div class="layer"></div>
+                    
                     <img src=${imagePath} alt="">
                </div>
                <div class="movie-content">
