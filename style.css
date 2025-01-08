@@ -201,6 +201,10 @@ body{
      .input{
           width: 100%;
      }
+
+     .movies-container{
+          margin-top: 20px;
+     }
 }
 
 @media (max-width:1500px){
