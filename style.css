@@ -121,7 +121,7 @@ body{
      flex-direction: column;
      gap: 10px;
      align-items: center;
-     margin-top: 30px;
+     margin-top: 10px;
      margin-inline: auto;
 }
 
@@ -215,7 +215,6 @@ body{
           width: 100%;
      }
 
-
      .input{
           width: 100%;
      }
@@ -226,7 +225,7 @@ body{
      }
 
      .logo h2{
-          font-size: 1.6rem;
+          font-size: 1.4rem;
      }
 }
 
