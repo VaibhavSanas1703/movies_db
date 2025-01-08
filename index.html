@@ -9,17 +9,20 @@
      <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+     <div class="logo">
+          <img src="film.svg" alt="">
+          <h2>MoviesTalkies</h2>
+     </div>
      <div class="voice-container">
           <div class="input">
               <textarea name="" id="text-voice" placeholder="Click to Speak button!" disabled></textarea>
           </div>
           <div class="mic">
-               <button id="mic" onclick="voiceCapture()">Speak</button>
+               <button id="mic" onclick="voiceCapture()">Click to Speak</button>
           </div>
           <div class="enable-search">
                <input type="checkbox" id="check">
-               <label for="check">Enable Search</label>
+               <label for="check">Enable Search Movie</label>
           </div>
           <div>
                <p id="text"></p>

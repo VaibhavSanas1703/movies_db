@@ -13,13 +13,13 @@ checkInput.addEventListener("change",(e) => {
      if(checkInput.checked){
           textArea.removeAttribute("disabled")
           textArea.setAttribute("placeholder","Enter your movie name?")
-          labelText.innerHTML = "Disable Search"
+          labelText.innerHTML = "Disable Search Movie"
           speakBtn.disabled = true;
      }
      else{
           textArea.setAttribute("disabled","")
           textArea.setAttribute("placeholder","Click to Speak button!")
-          labelText.innerHTML = "Enable Search"
+          labelText.innerHTML = "Enable Search Movie"
           speakBtn.disabled = false;
           textArea.value = ""
           document.querySelector("#text").innerHTML = ""
@@ -43,7 +43,10 @@ const renderMovies = async (URL) => {
      const allMovies = data.results;
     
      allMovies.forEach((movie) => {
-          const imagePath = movie.poster_path === null ? null : IMGPATH + movie.poster_path;
+          const imagePath = movie.poster_path === null ? "No-Image-Placeholder.svg.png" : IMGPATH + movie.poster_path;
+          const rld = new Date([movie.release_date]).toLocaleDateString().padStart(10,0);
+          // console.log(rld.toLocaleDateString().padStart(10,0));
+          
           movieContainer.innerHTML += `
           <div class="card">
                <div class="poster">
@@ -56,10 +59,13 @@ const renderMovies = async (URL) => {
                     <h2>${movie.vote_average.toFixed(1)}</h2>
                     <img src='star.svg'>
                     </div>
-                    <h3>${movie.release_date.toLocaleString("en-IN")}</h3>
+                    <h3>Release - ${rld}</h3>
                </div>
           </div>
           `
+
+          console.log(movie);
+          
      })
 }
 
